@@ -45,7 +45,7 @@ Token get_next_token() {
   char current = peek();
   Token token;
   token.value[0] = '\0'; // Clear token value
-
+  printf("%i -> ",pos);
   // NOTE: if end of file/input
   if (current == '\0') {
     token.type = TOKEN_EOF;
